@@ -43,7 +43,7 @@ button{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: yellow;
+  background-color: #F9E929;
 }
 
 
@@ -60,6 +60,7 @@ button{
 .carousel-container .track{
   display: inline-flex;
   transition: transform 0.5s;
+  touch-action: none;
 }
 .carousel-container .track .card-container{
 width: 256px;

@@ -3,6 +3,9 @@ const next = document.querySelector('.next');
 const track = document.querySelector('.track');
 const carouselWidth = document.querySelector('.carousel-container').offsetWidth;
 let index = 0;
+let initialPosition = null;
+let moving = false;
+let transform = 0;
 next.addEventListener('click', ()=>{
   index++;
   prev.classList.add('show');
@@ -21,9 +24,7 @@ prev.addEventListener('click', ()=>{
   track.style.transform = `translateX(-${0}px)`
 })
 
-let initialPosition = null;
-let moving = false;
-let transform = 0;
+
 
 const gestureStart = (e) => {
   initialPosition = e.pageX;
